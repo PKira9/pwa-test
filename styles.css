@@ -1,0 +1,87 @@
+body {
+  font-family: sans-serif;         
+  background: #fafafa;             
+  text-align: center;              
+  padding: 2em;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  margin: 0;                   
+}
+.card {
+  background: #FFF0FF;             
+  padding: 2em;                   
+  border-radius: 12px;            
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+  max-width: 400px;
+  margin: 0 auto;                 
+}
+.photo {
+  width: 150px;                   
+  border-radius: 30%;             
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.contacts a {
+  color: #1565c0;                 
+  text-decoration: none;
+}
+.contacts a:hover {
+  text-decoration: underline;     
+}
+
+.icon-link {
+    text-decoration: none; 
+}
+
+.icon {
+    width: 40px; 
+    height: 40px; 
+}
+
+
+.qr {
+  width: 120px;                   
+  margin-top: 1em;
+}
+
+h1, h3, p { 
+  font-weight: normal; 
+  color: #a09ef7;
+}
+
+.button {
+  position: relative;
+  background-color: #c4c3fa;
+  border: none;
+  font-size: 12px;
+  color: #FFFFFF;
+  padding: 10px;
+  width: 130px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 16px; 
+}
+
+.button:after {
+  content: "";
+  background: #f1f1f8;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Моя визитка</title> 
+  <link rel="manifest" href="manifest.json"> 
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="card"> 
+    <img src="images/photo.jpg" alt="Фото" class="photo">
+    <h1>Кира Подосинина</h1>
+    <p>Cuisinier</p> 
+    <div class="contact-buttons">
+    <a href="mailto:kpodoinina@mail.ru" id="email-link" class="icon-link">
+        <img src="icons/email.png" alt="Email" class="icon"> 
+    </a>
+    <a href="https://t.me/kirulya09" id="telegram-link" class="icon-link">
+        <img src="icons/telegram.png" alt="Telegram" class="icon"> 
+    </a>
+    <a href="https://github.com/PKira9" id="github-link" class="icon-link">
+        <img src="icons/GitHub.png" alt="GitHub" class="icon"> 
+    </a>
+</div>
+
+<div id="qr-code-container" style="display: none;">
+    <img id="qr-code" src="" alt="QR Code">
+</div>
+
+    <h3>QR-код:</h3>
+    <button class="button" onclick="showQRCode()">Показать QR-код</button> 
+    <div id="qrcode-container" style="display: none;"> <!-- Изначально скрываем QR-код -->
+      <img src="images/qr-code.gif" alt="QR" class="qr"> 
+  </div>
+  <script src="app.js"></script> 
+</body>
+</html>
